@@ -2,7 +2,7 @@
 :root{
   --paper:#F5F5F7;        /* main background - Apple light gray */
   --paper-card:#FFFFFF;   /* card background - pure white */
-  --ink:#636366ff;          /* main text / sidebar background - Apple systemGray */
+  --ink:#3c3c3dff;          /* main text / sidebar background - Apple systemGray */
   --ink-soft:#AEAEB2;     /* secondary text - Apple systemGray2 */
   --accent:#0071E3;       /* accent - Apple blue, links, tab highlight */
   --line:#D2D2D7;         /* hairline borders - Apple divider gray */
