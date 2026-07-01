@@ -2,7 +2,7 @@
 :root{
   --paper:#F5F5F7;        /* main background - Apple light gray */
   --paper-card:#FFFFFF;   /* card background - pure white */
-  --ink:#333336ff;          /* main text / sidebar background - Apple systemGray */
+  --ink:#636366ff;          /* main text / sidebar background - Apple systemGray */
   --ink-soft:#AEAEB2;     /* secondary text - Apple systemGray2 */
   --accent:#0071E3;       /* accent - Apple blue, links, tab highlight */
   --line:#D2D2D7;         /* hairline borders - Apple divider gray */
@@ -63,12 +63,14 @@ a:focus-visible, button:focus-visible{ outline:2px solid var(--accent); outline-
   font-size:26px;
   font-weight:600;
   line-height:1.2;
+  text-align:center;
 }
 .sidebar .role{
   font-family:var(--font-mono);
   font-size:13px;
   color:var(--accent);
   margin-top:6px;
+  text-align:center;
 }
 
 .sidebar nav{ display:flex; flex-direction:column; gap:2px; margin-top:8px; }
