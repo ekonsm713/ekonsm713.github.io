@@ -1,11 +1,11 @@
 /* ---------- DESIGN TOKENS: change these to reskin the whole site ---------- */
 :root{
-  --paper:#EDE7DA;        /* main background */
-  --paper-card:#F6F2E9;   /* card background, slightly lighter */
-  --ink:#1E2A38;          /* main text / sidebar background */
-  --ink-soft:#4A5A6A;     /* secondary text */
-  --accent:#A97C3D;       /* ochre accent — links, tab highlight */
-  --line:#D8CFBB;         /* hairline borders */
+  --paper:#F5F5F7;        /* main background - Apple light gray */
+  --paper-card:#FFFFFF;   /* card background - pure white */
+  --ink:#8E8E93;          /* main text / sidebar background - Apple systemGray */
+  --ink-soft:#AEAEB2;     /* secondary text - Apple systemGray2 */
+  --accent:#0071E3;       /* accent - Apple blue, links, tab highlight */
+  --line:#D2D2D7;         /* hairline borders - Apple divider gray */
   --font-display:'Fraunces', serif;
   --font-body:'Inter', sans-serif;
   --font-mono:'IBM Plex Mono', monospace;
@@ -32,7 +32,7 @@ a:focus-visible, button:focus-visible{ outline:2px solid var(--accent); outline-
 /* ---------- SIDEBAR ---------- */
 .sidebar{
   background:var(--ink);
-  color:#EDE7DA;
+  color:#F5F5F7;
   width:280px;
   flex-shrink:0;
   padding:48px 32px;
@@ -52,6 +52,7 @@ a:focus-visible, button:focus-visible{ outline:2px solid var(--accent); outline-
   display:flex; align-items:center; justify-content:center;
   font-family:var(--font-display);
   font-size:32px; font-weight:600;
+  align-self:center;
 }
 /* To use a real photo instead of initials, replace the .avatar div's
    content in the HTML below with: <img src="your-photo.jpg" alt="Your Name">
@@ -72,10 +73,10 @@ a:focus-visible, button:focus-visible{ outline:2px solid var(--accent); outline-
 
 .sidebar nav{ display:flex; flex-direction:column; gap:2px; margin-top:8px; }
 .sidebar nav a{
-  color:#EDE7DA;
+  color:#F5F5F7;
   font-size:14px;
   padding:8px 0;
-  border-bottom:1px solid rgba(237,231,218,0.12);
+  border-bottom:1px solid rgba(245,245,247,0.12);
 }
 .sidebar nav a:hover{ color:var(--accent); text-decoration:none; }
 .sidebar nav a.active{ color:var(--accent); font-weight:600; }
@@ -83,10 +84,12 @@ a:focus-visible, button:focus-visible{ outline:2px solid var(--accent); outline-
 .sidebar .socials{
   margin-top:auto;
   display:flex;
+  align-items:center;
   gap:16px;
-  font-family:var(--font-mono);
-  font-size:13px;
 }
+.sidebar .socials a{ display:flex; color:#F5F5F7; }
+.sidebar .socials a:hover{ color:var(--accent); }
+.sidebar .socials svg{ width:20px; height:20px; }
 
 /* ---------- MAIN CONTENT ---------- */
 main{
@@ -97,7 +100,7 @@ main{
 
 section{ margin-bottom:64px; }
 
-/* the "folder tab" label — the signature visual element of this template */
+/* the "folder tab" label - the signature visual element of this template */
 .tab{
   display:inline-block;
   font-family:var(--font-mono);
