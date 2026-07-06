@@ -315,7 +315,7 @@ p{ color:var(--ink-soft); }
 
 .page-note{
   margin-bottom:24px;
-  text-align:left;
+  text-align:center;
   font-size:12px;
   font-style:italic;
   color:var(--ink-soft);
