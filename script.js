@@ -10,3 +10,24 @@ document.querySelectorAll('.carousel').forEach(function(carousel){
     track.scrollBy({ left: track.clientWidth, behavior: 'smooth' });
   });
 });
+
+var lightbox = document.getElementById('lightbox');
+var lightboxImg = document.getElementById('lightbox-img');
+
+document.querySelectorAll('.lightbox-trigger').forEach(function(img){
+  img.addEventListener('click', function(){
+    lightboxImg.src = img.src;
+    lightboxImg.alt = img.alt;
+    lightbox.classList.add('active');
+  });
+});
+
+function closeLightbox(){
+  lightbox.classList.remove('active');
+  lightboxImg.src = '';
+}
+
+lightbox.addEventListener('click', closeLightbox);
+document.addEventListener('keydown', function(e){
+  if (e.key === 'Escape') closeLightbox();
+});

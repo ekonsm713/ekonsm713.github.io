@@ -49,15 +49,15 @@
           <button class="carousel-btn prev" aria-label="Previous dashboard">&#8249;</button>
           <div class="carousel-track">
             <div class="carousel-slide">
-              <img src="images/Eg_Inventory_Projection.jpg" alt="Inventory Projection+ dashboard screenshot">
+              <img class="lightbox-trigger" src="images/Eg_Inventory_Projection.jpg" alt="Inventory Projection+ dashboard screenshot">
               <p class="carousel-caption">Inventory Projection+</p>
             </div>
             <div class="carousel-slide">
-              <img src="images/Eg_Master_Data.jpg" alt="Master Data Quality Monitoring dashboard screenshot">
+              <img class="lightbox-trigger" src="images/Eg_Master_Data.jpg" alt="Master Data Quality Monitoring dashboard screenshot">
               <p class="carousel-caption">Master Data Quality Monitoring</p>
             </div>
             <div class="carousel-slide">
-              <img src="images/Eg_Supplier_Performance.jpg" alt="Supplier Performance dashboard screenshot">
+              <img class="lightbox-trigger" src="images/Eg_Supplier_Performance.jpg" alt="Supplier Performance dashboard screenshot">
               <p class="carousel-caption">Supplier Performance</p>
             </div>
           </div>
@@ -70,6 +70,12 @@
     <section id="python">
       <span class="tab">Python</span>
       <div class="card">
+
+        <div class="project-card">
+          <h3>Headline Sentiment vs. US Markets</h3>
+          <img class="project-image lightbox-trigger" src="images/SentimentMarkets.png" alt="Comparison of US financial market vs. headline sentiment">
+          <p class="carousel-caption">Comparison of US financial market vs. headline sentiment</p>
+        </div>
 
         <div class="project-card">
           <h3>FRED Economic Data Explorer</h3>
@@ -86,20 +92,15 @@
             </iframe>
           </div>
         </div>
-
-        <div class="projects-grid">
-
-          <!-- EDIT: duplicate this .project-card block for each additional Python project you want to showcase -->
-          <div class="project-card">
-            <h3>Project Name</h3>
-            <p>Placeholder.</p>
-          </div>
-
-        </div>
       </div>
     </section>
 
   </main>
+</div>
+
+<div class="lightbox" id="lightbox">
+  <span class="lightbox-close">&times;</span>
+  <img class="lightbox-img" id="lightbox-img" src="" alt="">
 </div>
 
 <footer>Built by Matt Snoke · Updated 2026</footer>
